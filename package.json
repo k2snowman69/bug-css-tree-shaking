@@ -1,7 +1,7 @@
 {
   "license": "UNLICENSED",
   "scripts": {
-    "build": "export NODE_ENV=production; webpack"
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "engine": {
     "node": "^10.15.0"
@@ -11,6 +11,7 @@
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "cross-env": "7.0.3",
     "css-loader": "^2.1.1",
     "mini-css-extract-plugin": "^0.5.0",
     "webpack": "4.12.2",
@@ -19,5 +20,6 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
-  }
+  },
+  "sideEffects": false
 }

@@ -8,7 +8,7 @@ module.exports = () => {
       module: {
         rules: [
           {
-            sideEffects: false,
+            sideEffects: true,
             test: /\.js$/,
             exclude: /node_modules/,
             use: {

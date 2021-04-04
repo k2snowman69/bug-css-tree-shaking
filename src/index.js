@@ -4,6 +4,7 @@ import { Component as ComponentC } from "./ui/component--import-modules";
 import { Component as ComponentA } from "./ui/component--no-import";
 import { Component as ComponentB } from "./ui/component--import-no-modules--index";
 import { Component as ComponentD } from "./ui/component--import-no-modules--component";
+import { Component as ComponentE } from "./ui/component--tree-shake-unused";
 
 const App = () => (
   <>
@@ -11,6 +12,7 @@ const App = () => (
     <ComponentB />
     <ComponentC />
     <ComponentD />
+    <ComponentE />
   </>
 );
 
