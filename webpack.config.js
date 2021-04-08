@@ -8,7 +8,9 @@ module.exports = () => {
       module: {
         rules: [
           {
-            sideEffects: false,
+            // CSS files are often imported using `import 'styles.scss'` which implies
+            // that they have side effects
+            sideEffects: true,
             test: /\.js$/,
             exclude: /node_modules/,
             use: {
@@ -19,6 +21,8 @@ module.exports = () => {
             },
           },
           {
+            // CSS files are often imported using `import 'styles.scss'` which implies
+            // that they have side effects
             sideEffects: true,
             test: /\.css$/,
             use: [

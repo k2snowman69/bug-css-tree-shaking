@@ -1,5 +1,5 @@
 import React from "react";
-import "./ComponentB.css";
+import "./Component.css";
 
 export default (props) => {
   return (

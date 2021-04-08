@@ -1,3 +1,2 @@
-import "./ComponentB.css";
-import { Component } from "./ComponentB";
-export { Component };
+import "./Component.css";
+export { default as Component } from "./Component";

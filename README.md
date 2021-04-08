@@ -1,14 +1,15 @@
-# CSS import
+# CSS tree shaking tester
 
-The goal of this project is to be able to test the webpack config and several different ways to import css files.
+The goal of this repository is to allow you to understand what will happen to your imports in various different scenarios.
 
-- component--no-import - CSS file is not imported anywhere so it shouldn't be included in the final output
-- component--import-no-modules - CSS file is imported via the index.js without any named modules
-- component--import-modules - CSS file is imported via the component using named modules
+The inputs you change are:
 
-# Expected
+- package.json - sideEffects
+- webpack.config.js - sideEffects for js and css
 
-The css for `component--import-no-modules` and `component--import-modules` to be included in the css output
+The outputs you are monitoring is ./dist/main.css
+
+Depending on how you change the sideEffects, you'll see different files get included in the final build or not.
 
 # Build
 
